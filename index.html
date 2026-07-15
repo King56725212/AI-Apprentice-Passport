@@ -1,44 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Apprentice Passport</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f4f8fc;
+    color:#333;
+}
 
-<header>
-    <h1>🎓 AI Apprentice Passport</h1>
-    <p>St Hilda's Secondary School</p>
-</header>
+header{
+    background:#003b8e;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
 
-<section class="hero">
-    <h2>Forge Your Future</h2>
+.hero{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    padding:50px 20px;
+}
 
-    <p>
-        Explore our school with an AI-powered personalised journey.
-    </p>
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
+    margin:40px 0;
+}
 
-    <div class="features">
-        <div>🤖 AI Recommendations</div>
-        <div>📷 QR Code Passport</div>
-        <div>🏅 Digital Badges</div>
-        <div>🎁 Win Exciting Prizes</div>
-        <div>📜 Completion Certificate</div>
-    </div>
+.features div{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
 
-    <a href="pages/register.html" class="button">
-        Start Journey →
-    </a>
+.button{
+    display:inline-block;
+    padding:15px 30px;
+    background:#f4b400;
+    color:black;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:10px;
+}
 
-</section>
+.button:hover{
+    background:#ffcc33;
+}
 
-<footer>
-    © 2026 St Hilda's Secondary School
-</footer>
-
-<script src="script.js"></script>
-
-</body>
-</html>
+footer{
+    text-align:center;
+    padding:30px;
+    color:#777;
+}
